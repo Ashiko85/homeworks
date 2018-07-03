@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #knight-type{
+            display:none;
+        }
+
+        #mage-type{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<input id="unit-name">
+
+<select name="unit-class" class="unit-class">
+    <option value="knight">knight</option>
+    <option value="mage">mage</option>
+</select>
+
+<select id="knight-type" name="unit-type" class="unit-type">
+    <option value="warrior">warrior</option>
+    <option value="paladin">paladin</option>
+</select>
+
+<select id="mage-type" name="unit-type" class="unit-type">
+    <option value="arcanemage">arcanemage</option>
+    <option value="druid">druid</option>
+</select>
+
+<button id="btn-unit-create" type="button">Create Unit</button>
+<div id="unit-result">
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+
+    var unitObject = {
+        name: " ",
+        clazz: " ",
+        type: " "
+    };
+
+    var $unitName = $("#unit-name");
+    $unitName.change(function () {
+        unitObject.name = $unitName.val();
+    });
+
+    var $unitClass = $("select[name=unit-class]");
+    $unitClass.change(function () {
+        unitObject.clazz = $(this)
+            .find("option:selected")
+            .val();
+        if (unitObject.clazz === "knight") {
+            $("#knight-type").show();
+            $("#mage-type").hide();
+        }
+        else if (unitObject.clazz === "mage") {
+            $("#knight-type").hide();
+            $("#mage-type").show();
+        }
+    });
+
+    var $knight = $("select[id=knight-type]");
+    $knight.change(function () {
+        unitObject.type = $(this)
+            .find("option:selected")
+            .val();
+    });
+
+    var $mage = $("select[id=mage-type]");
+    $mage.change(function () {
+        unitObject.type = $(this)
+            .find("option:selected")
+            .val();
+    });
+
+    var $btn = $("#btn-unit-create");
+    $btn.click(function () {
+        $("#unit-result").append('My name is ' + unitObject.name + ' and I am a ' + unitObject.clazz + ' of ' + unitObject.type + ' order!');
+    });
+
+</script>
+</body>
+</html>

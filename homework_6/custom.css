@@ -1,0 +1,147 @@
+/* WASZE STYLE */
+
+header{
+    background:#1E1B1A;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    color: #4C4C4C;
+}
+
+.navbar {
+    background: #e10126;
+    box-shadow: inset 0 -15px 10px -10px rgba(0, 0, 0, .2);
+    border-color: #e10126;
+    border-radius: 0px;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #FFFFFF;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #e7e7e7;
+    background-color: #555;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.img-responsive{
+    padding:15px;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    width: 100%;
+}
+
+.content .tilte{
+text-align: center;
+}
+
+.style1{
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    background: #1E1B1A;
+    text-align: center;
+}
+
+footer a {
+    letter-spacing: 0.10em;
+    text-decoration: none;
+    font-size: 1em;
+    color: #B1B1B1;
+}
+
+footer .title{
+    color:#FFFFFF;
+}
+
+#footer .title {
+    border-color: #fff !important;
+}
+
+#footer .popular-links a {
+    letter-spacing: 0.10em;
+    text-decoration: none;
+    font-size: 1em;
+    color: #B1B1B1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding-top:10px;
+padding-bottom:10px
+}
+
+ul.contact li a:before {
+    display: inline-block;
+    background: #3f3f3f;
+    width: 40px;
+    height: 40px;
+    margin-right: 1em;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+ul.contact li a.icon-twitter:before { background: #2DAAE4; }
+ul.contact li a.icon-facebook:before { background: #39599F; }
+ul.contact li a.icon-dribbble:before { background: #C4376B;	}
+ul.contact li a.icon-tumblr:before { background: #31516A; }
+ul.contact li a.icon-rss:before { background: #F2600B; }
+
+ul.contact li a {
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    font-size: 0.90em;
+    color: #FFF;
+}
+
+@media all and (min-width: 800px){
+    .navbar-default .navbar-brand {
+        font-size: 26px;
+        padding:40px;
+    }
+}
+
+@media all and (min-width: 1200px){
+    .style1{
+        text-align: left;
+    }
+    h2 {
+        text-align: left;
+    }
+    .content .tilte{
+        text-align: left;
+    }
+    footer {
+        text-align: left;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 35px;
+    }
+}

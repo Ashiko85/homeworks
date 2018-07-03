@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zadanie 9.2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Formularz</h2>
+    <form class="form-horizontal" action="#">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Imię:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="firstname" placeholder="Podaj imię" name="firstname">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Nazwisko:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="surename" placeholder="Podaj nazwisko" name="surename">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Podaj email" name="email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Od:</label>
+            <div class="col-sm-4">
+                <input type="date" class="form-control" id="datafrom" placeholder="Podaj od kiedy" name="datafrom">
+            </div>
+            <label class="control-label col-sm-2" for="email">Do:</label>
+            <div class="col-sm-4">
+                <input type="date" class="form-control" id="datato" placeholder="Podaj do kiedy" name="datato">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-check-label col-sm-offset-2 col-sm-3">
+                <input class="form-check-input " type="checkbox" name="Checkbox" id="Checkbox1" value="dog"> Pies
+            </label>
+
+
+            <label class="form-check-label col-sm-3">
+                <input class="form-check-input " type="checkbox" name="Checkbox" id="Checkbox2" value="cat"> Kot
+            </label>
+
+
+            <label class="form-check-label col-sm-3">
+                <input class="form-check-input " type="checkbox" name="Checkbox" id="Checkbox3" value="hamster"> Chomik
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="form-check-label col-sm-offset-2 col-sm-3">
+                <input class="form-check-input " type="radio" name="RadioOptions" id="Radio1" value="female"> Kobieta
+            </label>
+
+
+            <label class="form-check-label col-sm-3">
+                <input class="form-check-input " type="radio" name="RadioOptions" id="Radio2" value="male"> Mężczyzna
+            </label>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember"> Akceptuję regulamin</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Zatwierdź</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

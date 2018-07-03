@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>List motywacyjny </title>
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+    <style>
+        body{
+            background-color: #b1b9e4;
+            font-family: 'Mina', sans-serif;
+        }
+        main{
+            font-size: 20px;
+            color: #333;
+            padding: 100px;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="hide">
+<div>Imię:</div>
+<div class="data">Damian</div>
+
+<div>Nazwisko:</div>
+<div class="data">Kowalski</div>
+
+<div>Wiek</div>
+<div class="data">32 lata</div>
+
+<div>Wykształcenie</div>
+<div class="data">Wydziale Elektroniki i Technik Informacyjnych Politechniki Szczecińskiej na kierunku Informatyka</div>
+
+<div>Adres</div>
+<div class="data">Szczecin, al. Wyzwolenia 5</div>
+
+<div>Doświadczenie</div>
+<div class="data">7 letnie</div>
+
+<div>Umiejętności</div>
+<div class="data">Java EE, JSF, Seam, JPA, Spring, Maven, Webservices, Javascript, XML, JAXB, Quartz</div>
+
+<div>Tytuł naukowy</div>
+<div class="data">magister</div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="list"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var data = document.getElementsByClassName('data');
+        document.getElementsByClassName('list')[0].innerHTML =
+            '<main>'+
+        '<div>' + data[0].innerHTML + ' ' + data[1].innerHTML + '</div>' +
+        '<div>' + data[4].innerHTML + '</div>' +
+        '<h3>Szanowni Państwo</h3>' +
+
+        '<div>Na stronie internetowej XYZ sp. z o.o. znalazłem interesującą ofertę pracy dla Informatyka – Programisty JAVA i jestem bardzo zainteresowany pracą w Państwa firmie na tym stanowisku.</div>' +
+
+        '<div>Mam' + ' ' + data[2].innerHTML + ' ' + 'i programowaniem zajmuję się od wczesnych lat szkolnych, a w 2011 r.' +
+        'ukończyłem studia' + ' ' + data[7].innerHTML + 'skie' + ' ' + 'na' + ' ' + data[3].innerHTML + '.</div>' +
+        '<div>Specjalizuję się w następujących obszarach:' + ' ' + data[6].innerHTML + '.'+' ' +
+        'Posiadam' + ' ' + data[5].innerHTML + ' ' + ' doświadczenie pracy na podobnym stanowisku.</div>'+
+        '</main>'
+
+    });
+</script>
+
+</body>
+</html>

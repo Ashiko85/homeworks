@@ -1,0 +1,141 @@
+
+body {
+    color: #FFFFFF;
+    font-family: 'Unica One', cursive;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23222222' points='800%2C100 0%2C200 0%2C800 1600%2C800 1600%2C200'/%3E%3Cpolygon fill='%23444444' points='800%2C200 0%2C400 0%2C800 1600%2C800 1600%2C400'/%3E%3Cpolygon fill='%23666666' points='800%2C300 0%2C600 0%2C800 1600%2C800 1600%2C600'/%3E%3Cpolygon fill='%23888888' points='1600%2C800 800%2C400 0%2C800'/%3E%3Cpolygon fill='%23aaaaaa' points='1280%2C800 800%2C500 320%2C800'/%3E%3Cpolygon fill='%23cccccc' points='533.3%2C800 1066.7%2C800 800%2C600'/%3E%3Cpolygon fill='%23EEE' points='684.1%2C800 914.3%2C800 800%2C700'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+p{
+    font-size:20px;
+}
+h4 {
+    color: #26a6ba !important;
+}
+img {
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+
+/*NAWIGACJA*/
+.navbar {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 -55px 20px -30px rgba(0, 0, 0, .2);
+    border-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+    padding-right: 20px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #e7e7e7;
+    background-color: #26a6ba;
+    font-size: 22px;
+}
+.navbar-fixed-bottom {
+    padding-top: 10px;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Black Ops One', cursive;
+    color: #FFFFFF !important;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #26a6ba;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+a.list-group-item {
+    color: #fff;
+    font-size: 20px;
+}
+
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+    color: #fff;
+    background-color: #26a6ba;
+}
+
+.list-group-item {
+    background-color: transparent;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: #ffff;
+    background-color: transparent;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #26a6ba;
+    border-color: #26a6ba;
+}
+@media all and (max-width: 800px) {
+    .img-responsive{
+        max-height: 500px;
+    }
+}
+
+@media all and (min-width: 800px) and (max-width: 1200px) {
+    .img-responsive{
+        max-height: 600px;
+    }
+}
+
+

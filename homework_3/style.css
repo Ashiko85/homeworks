@@ -1,0 +1,133 @@
+@keyframes color {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes move {
+    0% {
+        background-color: black;
+        left: 0;
+        top: 0;
+    }
+    50% {
+        background-color: blue;
+        left: 100px;
+        top: 100px;
+    }
+    100% {
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0%);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(50%);
+        backgroud-color: blue;
+    }
+
+    50% {
+        transform: translateY(-30%);
+    }
+    75% {
+        transform: translateY(50%);
+        background-color: green;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background: #777;
+}
+
+h1 {
+    margin: 30px;
+}
+
+.box {
+    width: 45%;
+    margin: 5px;
+    float: left;
+    text-align: center;
+}
+
+.ball {
+    width: 200px;
+    height: 200px;
+    margin: 50px 30px 50px 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.effect1 {
+    background: linear-gradient(-45deg, red, blue, green, black);
+    background-size: 200% 200%;
+    position: relative;
+    animation: color 5s infinite;
+}
+
+.effect1:hover {
+    width: 300px;
+    height: 300px;
+}
+
+.effect2 {
+    background: black;
+    position: relative;
+
+}
+
+.effect2:hover {
+    position: relative;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-name: move;
+}
+
+.effect3 {
+    background: red;
+}
+
+.effect3:hover {
+    position: relative;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+    animation-name: bounce;
+}
+
+.effect4 {
+    background: linear-gradient(to bottom right, black, blue, red);
+}
+
+.effect4:hover {
+    position: relative;
+    right: 30px;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+}

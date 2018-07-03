@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zadanie domowe</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+<div class="red">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad alias autem beatae debitis dignissimos eligendi et
+    ex, in iure, iusto nulla porro, quibusdam quidem tenetur ut voluptas voluptate voluptatibus.
+</div>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur corporis dolore ducimus enim eveniet,
+    facilis id in labore laboriosam molestias nostrum numquam odit pariatur porro quam qui soluta voluptate.
+</p>
+<textarea name="text-area">
+to jest mój tekst:
+</textarea>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+</script>
+<script>
+    function changeValue(selector, val) {
+        var $selector = $(selector);
+        var elementValue = $selector.val();
+        $selector.val(elementValue + " " + val);
+    }
+</script>
+</body>
+</html>
